@@ -1,285 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="cybrainx-app-pages">
+    <meta name="content-hash" content="eb4b5655a59d900b">
+    <!-- Generated from _apps/axiom.json — edit that file, not this one. -->
+    <title>Axiom Privacy Policy</title>
+    <meta name="description" content="This Privacy Policy explains how Axiom collects, uses, stores and shares information when you use the Axiom mobile app for Android and related support pages hosted by Cybrainx." />
+    <link rel="canonical" href="https://cybrainx.com/axiom/privacy-policy.html" />
+    <link rel="stylesheet" href="../app-pages.css" />
+    <style>:root { --accent: #326fd1; --accent-soft: #e6eef9; }</style>
+  </head>
+  <body class="legal-doc">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Cybrainx</a>
+      <nav aria-label="Axiom">
+        <a href="index.html">Axiom</a>
+        <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+      </nav>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Axiom</title>
-    <meta name="description" content="Axiom Privacy Policy — how we collect, use, and protect your data.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --bg: #0f172a;
-            --text: #f8fafc;
-            --muted: #94a3b8;
-            --accent: #8b5cf6;
-            --accent2: #3b82f6;
-            --grad: linear-gradient(135deg, #8b5cf6, #3b82f6);
-            --border: 1px solid rgba(255, 255, 255, 0.1)
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
-
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
-            overflow-x: hidden
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, .07) 0%, transparent 50%), #0f172a;
-            z-index: -1;
-            pointer-events: none
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1.1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(15, 23, 42, .9);
-            backdrop-filter: blur(14px);
-            border-bottom: var(--border);
-            z-index: 100
-        }
-
-        .logo {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.25rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-decoration: none
-        }
-
-        .nav-links a {
-            color: var(--muted);
-            text-decoration: none;
-            margin-left: 1.8rem;
-            font-size: .9rem;
-            transition: color .2s
-        }
-
-        .nav-links a:hover {
-            color: var(--text)
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 7rem 2rem 5rem
-        }
-
-        .page-header {
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: var(--border)
-        }
-
-        .app-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: .5rem;
-            padding: .35rem 1rem;
-            border-radius: 99px;
-            background: rgba(139, 92, 246, .1);
-            border: 1px solid rgba(139, 92, 246, .3);
-            color: var(--accent);
-            font-size: .78rem;
-            font-weight: 700;
-            letter-spacing: .08em;
-            margin-bottom: 1.2rem
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            background: var(--grad);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: .4rem
-        }
-
-        .meta {
-            font-size: .83rem;
-            color: var(--muted)
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--text);
-            margin: 2.5rem 0 .75rem;
-            border-left: 3px solid var(--accent);
-            padding-left: .75rem
-        }
-
-        p,
-        li {
-            color: var(--muted);
-            font-size: .93rem;
-            margin-bottom: .5rem
-        }
-
-        ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem
-        }
-
-        a {
-            color: #3b82f6;
-            text-decoration: none
-        }
-
-        a:hover {
-            text-decoration: underline
-        }
-
-        strong {
-            color: var(--text)
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            border-top: var(--border);
-            color: var(--muted);
-            font-size: .82rem
-        }
-
-        .footer-logo {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.1rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: .5rem
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: .5rem .75rem;
-            margin: .6rem 0 .8rem
-        }
-
-        .footer-links a {
-            color: var(--muted);
-            text-decoration: none;
-            transition: color .2s
-        }
-
-        .footer-links a:hover {
-            color: var(--accent)
-        }
-
-        .sep {
-            color: rgba(255, 255, 255, .2)
-        }
-
-        @media(max-width:768px) {
-            .nav-links {
-                display: none
-            }
-
-            main {
-                padding: 6rem 1.2rem 4rem
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <nav>
-        <a href="../index.html" class="logo"><i class="fa-solid fa-cube"></i> Cybrainx</a>
-        <div class="nav-links">
-            <a href="index.html">Axiom</a>
-            <a href="../index.html#apps">All Apps</a>
-            <a href="mailto:owner@cybrainx.com">Contact</a>
-        </div>
-    </nav>
-    <main>
-        <div class="page-header">
-            <div class="app-badge"><i class="fa-solid fa-layer-group"></i> Axiom</div>
-            <h1>Privacy Policy</h1>
-            <p class="meta">Last updated: March 1, 2026 &nbsp;·&nbsp; cybrainx.com</p>
-        </div>
-        <p>This Privacy Policy applies to the <strong>Axiom</strong> mobile application ("App"), developed by
-            <strong>Cybrainx</strong>. It explains how we collect, use, and protect your data.</p>
-        <h2>1. Information We Collect</h2>
-        <ul>
-            <li><strong>Usage & Analytics:</strong> Device info, OS version, feature interactions, crash reports — via
-                Firebase/Google Analytics.</li>
-            <li><strong>Productivity Data:</strong> Tasks, projects, and kanban data you create are stored locally or in
-                your connected cloud storage. We do not access or store your productivity data on our servers.</li>
-            <li><strong>Advertising Data:</strong> Google AdMob may collect identifiers for ad delivery.</li>
-            <li><strong>Purchase Data:</strong> Handled by Google Play/Apple App Store. We do not store payment details.
-            </li>
-        </ul>
-        <h2>2. How We Use Your Information</h2>
-        <ul>
-            <li>To operate and improve the App;</li>
-            <li>To serve ads via Google AdMob (free tier);</li>
-            <li>To analyze usage and fix bugs via Firebase;</li>
-            <li>To manage subscriptions via RevenueCat.</li>
-        </ul>
-        <h2>3. Third-Party Services</h2>
-        <ul>
-            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> —
-                advertising</li>
-            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase / Google
-                    Analytics</a> — analytics & crash reporting</li>
-            <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> —
-                subscription management</li>
-        </ul>
-        <h2>4. Children's Privacy</h2>
-        <p>The App is not directed to children under 13. We do not knowingly collect data from children.</p>
-        <h2>5. Data Security</h2>
-        <p>We apply reasonable security measures. Your productivity data stays on your device unless you choose to sync
-            it.</p>
-        <h2>6. Your Rights</h2>
-        <p>Contact <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a> to access, correct, or delete your data.
+    <main class="container">
+      <section class="hero">
+        <span class="pill">Privacy Policy</span>
+        <h1>Axiom</h1>
+        <p class="lede">
+          This Privacy Policy explains how Axiom collects, uses, stores and shares information when you use the Axiom mobile app for Android and related support pages hosted by Cybrainx.
         </p>
-        <h2>7. Changes</h2>
-        <p>We may update this policy periodically. Continued use constitutes acceptance.</p>
-        <h2>8. Contact</h2>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a></li>
-            <li><strong>Website:</strong> <a href="https://cybrainx.com">cybrainx.com</a></li>
-            <li><strong>Address:</strong> Belo Horizonte, MG — Brazil</li>
-        </ul>
-    </main>
-    <footer>
-        <div class="footer-logo"><i class="fa-solid fa-cube"></i> Cybrainx</div>
-        <div class="footer-links">
-            <a href="index.html">Axiom</a><span class="sep">·</span>
-            <a href="privacy-policy.html">Privacy Policy</a><span class="sep">·</span>
-            <a href="../data-deletion-request.html">Data deletion</a><span class="sep">·</span>
-            <a href="terms-of-use.html">Terms of Use</a><span class="sep">·</span>
-            <a href="../index.html">Home</a>
-        </div>
-        <p>&copy; 2026 Cybrainx. All rights reserved.</p>
-    </footer>
-</body>
+        <p class="meta" data-updated="2026-09-30">
+          Last updated: September 30, 2026
+        </p>
 
+        <nav class="toc" aria-label="Table of contents">
+          <a href="#scope">1. Scope</a>
+          <a href="#collect">2. Information We Collect</a>
+          <a href="#use">3. How We Use Information</a>
+          <a href="#share">4. Sharing and Service Providers</a>
+          <a href="#permissions">5. Device Permissions</a>
+          <a href="#ads">6. Ads and Analytics</a>
+          <a href="#retain">7. Retention and Deletion</a>
+          <a href="#rights">8. Your Choices and Rights</a>
+          <a href="#security">9. Security</a>
+          <a href="#children">10. Children</a>
+          <a href="#international">11. International Transfers</a>
+          <a href="#changes">12. Changes to This Policy</a>
+          <a href="#contact">13. Contact</a>
+        </nav>
+      </section>
+
+      <section class="section" id="scope">
+        <h2>1. Scope</h2>
+        <p>This Privacy Policy applies to the Axiom mobile app for Android, including free and premium features and the related support pages hosted by Cybrainx. It covers information handled by Cybrainx and by the third-party service providers that help us operate the app.</p>
+      </section>
+
+      <section class="section" id="collect">
+        <h2>2. Information We Collect</h2>
+        <div class="grid">
+        <div class="card"><strong>Your tasks and projects</strong>The tasks, subtasks, alarms, notes and settings you create are stored on your device. We do not upload them to our servers, and local backups stay on your device.</div>
+        <div class="card"><strong>Voice input</strong>When you dictate, your device&#39;s speech recognition service (for example, Google on Android) turns your voice into text. Axiom does not record or keep audio; the text is then handled like typed text.</div>
+        <div class="card"><strong>Text you send to AI features</strong>When you use an AI feature, the text you type or dictate is sent through our server to an AI model provider to produce the result. We do not use it to identify you, build a profile or show ads. Please avoid including sensitive personal information.</div>
+        <div class="card"><strong>Feedback and support messages</strong>If you choose to send feedback or contact support from the app, we receive your message, the email address you provide (optional) and technical details such as app version, operating system and device model.</div>
+        <div class="card"><strong>Subscription and billing data</strong>If you purchase premium access, we receive subscription status, entitlement status, product identifiers, store transaction status and app user identifiers through the app stores and RevenueCat. We do not receive your full credit card number.</div>
+        <div class="card"><strong>Advertising and device data</strong>In the free version, Google Mobile Ads and its partners may process device identifiers (such as the advertising ID), app and device information, approximate location derived from your IP address and ad interaction data. Where the law requires it, personalized ads are only shown after you consent.</div>
+        <div class="card"><strong>Usage and diagnostics data</strong>We use Google Analytics for Firebase and Firebase Crashlytics to understand how the app is used and to fix problems. This may include app events, device model, operating system, app version, crash traces and an app instance identifier. It does not include the content you create.</div>
+        <div class="card"><strong>Local files and on-device storage</strong>We store your settings and the content you create on your device to support app functionality. This information stays on your device unless you choose to share or export it.</div>
+        </div>
+        <h3>Information you provide directly</h3>
+        <ul>
+          <li>Content you create and save in the app.</li>
+          <li>Text you submit to AI features.</li>
+          <li>Support requests and feedback you send us.</li>
+        </ul>
+        <h3>Information collected automatically</h3>
+        <ul>
+          <li>Technical app and device information needed to run the app, deliver notifications, process subscriptions and show ads.</li>
+          <li>Usage events and diagnostics, as described above.</li>
+          <li>Subscription state and entitlement information returned by the app stores.</li>
+        </ul>
+        <h3>Information from third parties</h3>
+        <ul>
+          <li>Google Play and RevenueCat may provide purchase and entitlement status.</li>
+          <li>Google Mobile Ads may provide ad response and ad measurement data.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="use">
+        <h2>3. How We Use Information</h2>
+        <ul>
+          <li>To provide the app's features, such as organizing tasks, alarms and notes, and turning what you type or say into tasks.</li>
+          <li>To save your content and preferences.</li>
+          <li>To deliver the reminders and notifications you turn on.</li>
+          <li>To generate the AI results you request.</li>
+          <li>To provide premium subscriptions, restore purchases and manage billing status.</li>
+          <li>To show ads in the free version of the app.</li>
+          <li>To understand usage and fix bugs and crashes.</li>
+          <li>To answer your feedback and support requests.</li>
+          <li>To maintain, troubleshoot, secure and improve the app.</li>
+          <li>To comply with legal obligations and respond to lawful requests.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="share">
+        <h2>4. Sharing and Service Providers</h2>
+        <p>We do not sell your personal information. We share information only with the service providers and platforms needed to run the app:</p><ul>
+          <li><strong><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google AdMob (Google Mobile Ads)</a></strong> — displays ads and measures ad performance in the free version of the app.</li>
+          <li><strong><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Analytics for Firebase</a></strong> — measures how the app is used, in aggregate, so we can improve it.</li>
+          <li><strong><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Crashlytics</a></strong> — reports crashes and technical errors so we can fix them.</li>
+          <li><strong><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a></strong> — manages subscriptions, entitlements and purchase restoration.</li>
+          <li><strong><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play</a></strong> — distributes the app and processes in-app purchases.</li>
+          <li><strong><a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter (AI model providers)</a></strong> — generates the results of AI features from the text you submit, relayed through our server.</li>
+          <li><strong><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cybrainx support services (hosted on Cloudflare)</a></strong> — delivers the feedback and support messages you choose to send, receives technical error reports, and checks whether your app version is up to date.</li>
+        </ul>
+        <p>We may also disclose information if required by law, to protect users, to enforce our terms, or in connection with a business transfer such as a merger, acquisition or asset sale.</p>
+      </section>
+
+      <section class="section" id="permissions">
+        <h2>5. Device Permissions</h2>
+        <p>The app may ask for the following permissions:</p>
+        <ul>
+          <li><strong>Notifications</strong> — to show the reminders and alerts you turn on.</li>
+          <li><strong>Alarms &amp; reminders</strong> — to fire alarms and reminders at the exact time you set.</li>
+          <li><strong>Microphone</strong> — only while you use a voice feature, such as dictating text.</li>
+        </ul>
+        <p>You can grant or revoke permissions at any time in your device settings. If you revoke one, only the feature that depends on it stops working.</p>
+      </section>
+
+      <section class="section" id="ads">
+        <h2>6. Ads and Analytics</h2>
+        <p>The free version of Axiom displays ads served by Google AdMob. Where required by law (for example in the European Economic Area, the United Kingdom and Switzerland), we ask for your consent through Google's consent message before personalized ads are shown, and you can change your choice later from the app's privacy settings. You can also reset your advertising ID or opt out of ad personalization in your device settings.</p>
+        <p>We use analytics and crash reports to measure aggregate usage and diagnose problems. We do not use these tools to identify you personally or to read the content you create.</p>
+        <p>If we later enable new advertising, tracking or analytics tools, we will update this Privacy Policy and any required in-app notices or store disclosures before shipping those changes.</p>
+      </section>
+
+      <section class="section" id="retain">
+        <h2>7. Retention and Deletion</h2>
+        <p>We keep personal information only for as long as it is reasonably needed to operate the app, provide its features, resolve disputes, enforce agreements and meet legal requirements.</p>
+        <ul>
+          <li>Information stored only on your device remains until you delete it, clear the app data or uninstall the app.</li>
+          <li>Text sent to AI features is processed to produce the response and is not stored on our server afterwards; the AI provider may keep it for a limited time under its own policy.</li>
+          <li>Feedback and support messages are kept only as long as needed to handle your request.</li>
+          <li>Analytics, crash and advertising data are kept for the retention periods set by those service providers.</li>
+          <li>Backups, logs and fraud-prevention records may remain for a limited time where reasonably necessary.</li>
+        </ul>
+        <p>To ask us to delete data we hold about you, use the <a href="../data-deletion-request.html?app=axiom">data deletion request page</a> or email <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a>.</p>
+      </section>
+
+      <section class="section" id="rights">
+        <h2>8. Your Choices and Rights</h2>
+        <ul>
+          <li>You can manage reminders inside the app and through your device notification settings.</li>
+          <li>You can grant or revoke device permissions in your device settings.</li>
+          <li>You can review or change your ad consent choice from the app's privacy settings.</li>
+          <li>You can edit or delete the content you created from within the app.</li>
+          <li>You can request access to, correction, portability or deletion of your personal data, and withdraw consent, through the contact channels below.</li>
+          <li>Depending on where you live, you may have additional rights under laws such as Brazil's LGPD or the EU and UK GDPR, including the right to complain to your data protection authority.</li>
+        </ul>
+        <div class="note">Can't access the app? You can still ask us to delete your data through the <a href="../data-deletion-request.html?app=axiom">data deletion request page</a> or by email at <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a>.</div>
+      </section>
+
+      <section class="section" id="security">
+        <h2>9. Security</h2>
+        <p>We use reasonable administrative, technical and organizational safeguards intended to protect information, including encrypted connections to our services and the security features provided by our infrastructure partners. No system is perfectly secure, so we cannot guarantee absolute security.</p>
+      </section>
+
+      <section class="section" id="children">
+        <h2>10. Children</h2>
+        <p>Axiom is not directed to children under 13, or under the minimum digital age in the relevant jurisdiction, without parental or guardian involvement. If you believe a child has provided personal information in violation of applicable law, contact us so we can review and take appropriate action.</p>
+      </section>
+
+      <section class="section" id="international">
+        <h2>11. International Transfers</h2>
+        <p>Our service providers may process or store information in countries other than the one where you live. By using the app, you understand that information may be transferred to and processed in these jurisdictions, subject to applicable safeguards and law.</p>
+      </section>
+
+      <section class="section" id="changes">
+        <h2>12. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect product changes, legal requirements or operational updates. When we do, we will update the "Last updated" date above. If a change is material, we may also provide additional notice inside the app or through store listings where required.</p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>13. Contact</h2>
+        <p>Axiom is operated by Cybrainx. If you have privacy questions, want to exercise your rights or need help with a deletion request, contact us:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a></li>
+          <li><strong>Data deletion requests:</strong> <a href="../data-deletion-request.html?app=axiom">data deletion request page</a></li>
+          <li><strong>App page:</strong> <a href="index.html">cybrainx.com/axiom/</a></li>
+          <li><strong>Location:</strong> Belo Horizonte, MG, Brazil</li>
+        </ul>
+        <p>The <strong>cybrainx.com</strong> domain used for Axiom belongs to <strong>Oberdan Fonseca</strong>. Professional profile: <a href="https://www.linkedin.com/in/oberdan-eng/" target="_blank" rel="noopener">https://www.linkedin.com/in/oberdan-eng/</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="index.html">Axiom</a>
+        <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+        <a href="../data-deletion-request.html?app=axiom">Data deletion</a>
+        <a href="../index.html#apps">All apps</a>
+      </div>
+      <p>&copy; 2026 Cybrainx. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

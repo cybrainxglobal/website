@@ -1,268 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="cybrainx-app-pages">
+    <meta name="content-hash" content="154bf3c9dac40b56">
+    <!-- Generated from _apps/axiom.json — edit that file, not this one. -->
+    <title>Axiom Terms of Use</title>
+    <meta name="description" content="These Terms of Use govern your use of the Axiom app by Cybrainx. By downloading or using the app, you accept these Terms." />
+    <link rel="canonical" href="https://cybrainx.com/axiom/terms-of-use.html" />
+    <link rel="stylesheet" href="../app-pages.css" />
+    <style>:root { --accent: #326fd1; --accent-soft: #e6eef9; }</style>
+  </head>
+  <body class="legal-doc">
+    <header class="topbar">
+      <a class="brand" href="../index.html">Cybrainx</a>
+      <nav aria-label="Axiom">
+        <a href="index.html">Axiom</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html" aria-current="page">Terms of Use</a>
+      </nav>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use | Axiom</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --bg: #0f172a;
-            --text: #f8fafc;
-            --muted: #94a3b8;
-            --accent: #8b5cf6;
-            --grad: linear-gradient(135deg, #8b5cf6, #3b82f6);
-            --border: 1px solid rgba(255, 255, 255, 0.1)
-        }
+    <main class="container">
+      <section class="hero">
+        <span class="pill">Terms of Use</span>
+        <h1>Axiom</h1>
+        <p class="lede">
+          These Terms of Use govern your use of the Axiom app by Cybrainx. By downloading or using the app, you accept these Terms.
+        </p>
+        <p class="meta" data-updated="2026-09-30">
+          Last updated: September 30, 2026
+        </p>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
+        <nav class="toc" aria-label="Table of contents">
+          <a href="#eligibility">1. Eligibility</a>
+          <a href="#license">2. License</a>
+          <a href="#content">3. Your Content</a>
+          <a href="#ai">4. AI-Generated Content</a>
+          <a href="#purchases">5. In-App Purchases &amp; Subscriptions</a>
+          <a href="#ads">6. Advertising</a>
+          <a href="#notifications">7. Notifications</a>
+          <a href="#ip">8. Intellectual Property</a>
+          <a href="#third-party">9. Third-Party Services</a>
+          <a href="#disclaimers">10. Disclaimers</a>
+          <a href="#liability">11. Limitation of Liability</a>
+          <a href="#law">12. Governing Law</a>
+          <a href="#changes">13. Changes</a>
+          <a href="#contact">14. Contact</a>
+        </nav>
+      </section>
 
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
-            overflow-x: hidden
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background: radial-gradient(circle at 20% 30%, rgba(139, 92, 246, .07) 0%, transparent 50%), #0f172a;
-            z-index: -1;
-            pointer-events: none
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1.1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(15, 23, 42, .9);
-            backdrop-filter: blur(14px);
-            border-bottom: var(--border);
-            z-index: 100
-        }
-
-        .logo {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.25rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-decoration: none
-        }
-
-        .nav-links a {
-            color: var(--muted);
-            text-decoration: none;
-            margin-left: 1.8rem;
-            font-size: .9rem;
-            transition: color .2s
-        }
-
-        .nav-links a:hover {
-            color: var(--text)
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 7rem 2rem 5rem
-        }
-
-        .page-header {
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: var(--border)
-        }
-
-        .app-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: .5rem;
-            padding: .35rem 1rem;
-            border-radius: 99px;
-            background: rgba(139, 92, 246, .1);
-            border: 1px solid rgba(139, 92, 246, .3);
-            color: var(--accent);
-            font-size: .78rem;
-            font-weight: 700;
-            letter-spacing: .08em;
-            margin-bottom: 1.2rem
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            background: var(--grad);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: .4rem
-        }
-
-        .meta {
-            font-size: .83rem;
-            color: var(--muted)
-        }
-
-        h2 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--text);
-            margin: 2.5rem 0 .75rem;
-            border-left: 3px solid var(--accent);
-            padding-left: .75rem
-        }
-
-        p,
-        li {
-            color: var(--muted);
-            font-size: .93rem;
-            margin-bottom: .5rem
-        }
-
-        ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem
-        }
-
-        a {
-            color: #3b82f6;
-            text-decoration: none
-        }
-
-        a:hover {
-            text-decoration: underline
-        }
-
-        strong {
-            color: var(--text)
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            border-top: var(--border);
-            color: var(--muted);
-            font-size: .82rem
-        }
-
-        .footer-logo {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.1rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: .5rem
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: .5rem .75rem;
-            margin: .6rem 0 .8rem
-        }
-
-        .footer-links a {
-            color: var(--muted);
-            text-decoration: none;
-            transition: color .2s
-        }
-
-        .footer-links a:hover {
-            color: var(--accent)
-        }
-
-        .sep {
-            color: rgba(255, 255, 255, .2)
-        }
-
-        @media(max-width:768px) {
-            .nav-links {
-                display: none
-            }
-
-            main {
-                padding: 6rem 1.2rem 4rem
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <nav>
-        <a href="../index.html" class="logo"><i class="fa-solid fa-cube"></i> Cybrainx</a>
-        <div class="nav-links">
-            <a href="index.html">Axiom</a>
-            <a href="../index.html#apps">All Apps</a>
-            <a href="mailto:owner@cybrainx.com">Contact</a>
-        </div>
-    </nav>
-    <main>
-        <div class="page-header">
-            <div class="app-badge"><i class="fa-solid fa-layer-group"></i> Axiom</div>
-            <h1>Terms of Use</h1>
-            <p class="meta">Last updated: March 1, 2026 &nbsp;·&nbsp; cybrainx.com</p>
-        </div>
-        <p>These Terms of Use govern your use of the <strong>Axiom</strong> application by <strong>Cybrainx</strong>. By
-            using the App, you accept these Terms.</p>
+      <section class="section" id="eligibility">
         <h2>1. Eligibility</h2>
-        <p>You must be at least 13 years old to use the App.</p>
-        <h2>2. License</h2>
-        <p>You receive a limited, non-exclusive, non-transferable license for personal or professional use. You may not
-            copy, redistribute, or reverse engineer the App.</p>
-        <h2>3. User Content</h2>
-        <p>Tasks, projects, and board data you create belong to you. You are responsible for the content you store in
-            the App. We do not claim ownership of your productivity data.</p>
-        <h2>4. In-App Purchases & Subscriptions</h2>
-        <p>Purchases are processed by Google Play or Apple App Store. Subscriptions auto-renew unless cancelled 24 hours
-            before renewal. Refunds follow the app store's policy.</p>
-        <h2>5. Intellectual Property</h2>
-        <p>All UI, design, and code belongs to Cybrainx. Unauthorized copying or distribution is prohibited.</p>
-        <h2>6. Disclaimers</h2>
-        <p>The App is provided "as is". We are not responsible for lost productivity data due to device issues or
-            accidental deletion.</p>
-        <h2>7. Limitation of Liability</h2>
-        <p>Cybrainx is not liable for indirect, incidental, or consequential damages from App use.</p>
-        <h2>8. Governing Law</h2>
-        <p>These Terms are governed by Brazilian law. Disputes are resolved in courts of Belo Horizonte, MG, Brazil.</p>
-        <h2>9. Changes</h2>
-        <p>We may update these Terms at any time. Continued use constitutes acceptance.</p>
-        <h2>10. Contact</h2>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a></li>
-            <li><strong>Website:</strong> <a href="https://cybrainx.com">cybrainx.com</a></li>
-        </ul>
-    </main>
-    <footer>
-        <div class="footer-logo"><i class="fa-solid fa-cube"></i> Cybrainx</div>
-        <div class="footer-links">
-            <a href="index.html">Axiom</a><span class="sep">·</span>
-            <a href="privacy-policy.html">Privacy Policy</a><span class="sep">·</span>
-            <a href="../data-deletion-request.html">Data deletion</a><span class="sep">·</span>
-            <a href="terms-of-use.html">Terms of Use</a><span class="sep">·</span>
-            <a href="../index.html">Home</a>
-        </div>
-        <p>&copy; 2026 Cybrainx. All rights reserved.</p>
-    </footer>
-</body>
+        <p>You must be at least 13 years old, or the minimum age required in your country, to use the app.</p>
+      </section>
 
+      <section class="section" id="license">
+        <h2>2. License</h2>
+        <p>You receive a limited, non-exclusive, non-transferable and revocable license to use the app for personal, non-commercial purposes. You may not copy, reverse engineer, resell or misuse the app, its AI features or its AI-generated content.</p>
+      </section>
+
+      <section class="section" id="content">
+        <h2>3. Your Content</h2>
+        <p>Content you create in the app remains yours, and you are responsible for it. Content stored only on your device can be lost if you uninstall the app, clear its data or change devices, so keep your own backups or exports.</p>
+      </section>
+
+      <section class="section" id="ai">
+        <h2>4. AI-Generated Content</h2>
+        <p>Some results in the app are generated by artificial intelligence. They may be inaccurate or incomplete and do not constitute professional medical, legal, financial, psychological or religious advice. Review them before relying on them and use them at your own discretion.</p>
+      </section>
+
+      <section class="section" id="purchases">
+        <h2>5. In-App Purchases &amp; Subscriptions</h2>
+        <p>Purchases are processed by Google Play. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Free trials, where offered, convert to a paid subscription unless cancelled before the trial ends. Refunds follow the app store's policy.</p>
+        <p>You can manage or cancel a subscription at any time in your Google Play account settings. Uninstalling the app does not cancel it.</p>
+      </section>
+
+      <section class="section" id="ads">
+        <h2>6. Advertising</h2>
+        <p>The free version of the app displays ads provided by third parties. We are not responsible for the content of third-party ads or for the products and services they promote.</p>
+      </section>
+
+      <section class="section" id="notifications">
+        <h2>7. Notifications</h2>
+        <p>The app may send the reminders and notifications you turn on. You can disable them at any time in the app or in your device settings.</p>
+      </section>
+
+      <section class="section" id="ip">
+        <h2>8. Intellectual Property</h2>
+        <p>The app, its design and the content we provide belong to Cybrainx or its licensors. Unauthorized distribution is prohibited.</p>
+      </section>
+
+      <section class="section" id="third-party">
+        <h2>9. Third-Party Services</h2>
+        <p>Some features rely on third-party services, which are governed by their own terms and policies. See the <a href="privacy-policy.html">Privacy Policy</a> for the list.</p>
+      </section>
+
+      <section class="section" id="disclaimers">
+        <h2>10. Disclaimers</h2>
+        <p>The app is provided "as is" and "as available". AI content may be imperfect. We are not responsible for decisions made based on app content.</p>
+      </section>
+
+      <section class="section" id="liability">
+        <h2>11. Limitation of Liability</h2>
+        <p>To the extent permitted by law, Cybrainx is not liable for indirect, incidental or consequential damages, or for loss of data, arising from your use of the app. Nothing in these Terms limits consumer rights that cannot be waived under the law that applies to you.</p>
+      </section>
+
+      <section class="section" id="law">
+        <h2>12. Governing Law</h2>
+        <p>These Terms are governed by Brazilian law. Disputes are resolved in the courts of Belo Horizonte, MG, Brazil, without prejudice to mandatory consumer protection rules of your country of residence.</p>
+      </section>
+
+      <section class="section" id="changes">
+        <h2>13. Changes</h2>
+        <p>We may update these Terms from time to time. When we do, we will update the "Last updated" date above. Continued use after an update means you accept the new Terms.</p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>14. Contact</h2>
+        <p>Questions about these Terms? Contact Cybrainx:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:owner@cybrainx.com">owner@cybrainx.com</a></li>
+          <li><strong>Data deletion requests:</strong> <a href="../data-deletion-request.html?app=axiom">data deletion request page</a></li>
+          <li><strong>App page:</strong> <a href="index.html">cybrainx.com/axiom/</a></li>
+          <li><strong>Location:</strong> Belo Horizonte, MG, Brazil</li>
+        </ul>
+        <p>The <strong>cybrainx.com</strong> domain used for Axiom belongs to <strong>Oberdan Fonseca</strong>. Professional profile: <a href="https://www.linkedin.com/in/oberdan-eng/" target="_blank" rel="noopener">https://www.linkedin.com/in/oberdan-eng/</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="index.html">Axiom</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html" aria-current="page">Terms of Use</a>
+        <a href="../data-deletion-request.html?app=axiom">Data deletion</a>
+        <a href="../index.html#apps">All apps</a>
+      </div>
+      <p>&copy; 2026 Cybrainx. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

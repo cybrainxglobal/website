@@ -1,0 +1,11 @@
+{
+  "company": "Cybrainx",
+  "domain": "cybrainx.com",
+  "baseUrl": "https://cybrainx.com",
+  "email": "owner@cybrainx.com",
+  "owner": "Oberdan Fonseca",
+  "ownerProfile": "https://www.linkedin.com/in/oberdan-eng/",
+  "location": { "en": "Belo Horizonte, MG, Brazil", "pt": "Belo Horizonte, MG, Brasil" },
+  "courts": { "en": "Belo Horizonte, MG, Brazil", "pt": "Belo Horizonte, MG" },
+  "governingLaw": { "en": "Brazilian law", "pt": "legislação brasileira" }
+}

@@ -1,0 +1,59 @@
+# Gera as páginas dos apps a partir de _apps/*.json e publica o site no GitHub Pages.
+# Requer (uma vez): Settings → Pages → Build and deployment → Source: "GitHub Actions".
+name: Site — gerar páginas dos apps e publicar
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write # salvar no repositório as páginas geradas
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Gerar páginas dos apps
+        run: node _generator/generate.mjs
+
+      - name: Salvar páginas geradas no repositório
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Gera páginas dos apps (automático)"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Montar a pasta publicada
+        run: |
+          mkdir _public
+          tar --exclude=./.git --exclude=./.github --exclude=./_apps --exclude=./_generator \
+            --exclude=./_public -cf - . | tar -xf - -C _public
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

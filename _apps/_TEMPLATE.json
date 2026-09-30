@@ -1,0 +1,36 @@
+{
+  "name": "My App",
+  "mode": "generated",
+  "lang": "en",
+  "headline": "Short, catchy title for the top of the page",
+  "tagline": "One sentence that sells the app — shown on the home card and in search results.",
+  "description": "Two or three sentences explaining what the app does and who it is for.",
+  "icon": "fa-solid fa-star",
+  "colors": ["#8b5cf6", "#3b82f6"],
+  "tags": [
+    { "icon": "fa-solid fa-bolt", "label": "Productivity" },
+    { "icon": "fa-solid fa-microchip", "label": "AI" }
+  ],
+  "stores": {
+    "googlePlay": "com.cybrainx.myapp",
+    "appStore": ""
+  },
+  "features": [
+    { "icon": "fa-solid fa-list-check", "title": "Feature one", "text": "What it does for the user, in one sentence." },
+    { "icon": "fa-solid fa-bell", "title": "Feature two", "text": "What it does for the user, in one sentence." },
+    { "icon": "fa-solid fa-chart-line", "title": "Feature three", "text": "What it does for the user, in one sentence." }
+  ],
+  "highlights": ["Works offline", "14 languages"],
+  "home": { "listed": true, "order": 100 },
+  "legal": {
+    "services": ["admob", "firebase-analytics", "crashlytics", "revenuecat", "google-play"],
+    "ads": { "personalized": true },
+    "permissions": ["notifications"],
+    "purpose": "organizing tasks and sending reminders",
+    "onDevice": "",
+    "dataCards": [
+      { "title": "Your tasks and notes", "text": "The tasks, notes and settings you create are stored on your device. We do not upload them to our servers." }
+    ],
+    "minAge": 13
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Axiom",
+  "mode": "generated",
+  "lang": "en",
+  "headline": "Master Your Workflow",
+  "tagline": "Organize your day. Achieve more. Tasks, alarms and notes with AI capture, Kanban, Gantt and calendar views.",
+  "description": "Axiom is an all-in-one productivity app. Type or say what you need and the AI files it as a task, an alarm or a quick note — then plan it on a list, a Kanban board, a Gantt timeline or the calendar, and follow your progress on the dashboard.",
+  "icon": "fa-solid fa-layer-group",
+  "image": "icon.png",
+  "colors": ["#3b82f6", "#8b5cf6"],
+  "category": "ProductivityApplication",
+  "tags": [
+    { "icon": "fa-solid fa-check-double", "label": "Productivity" },
+    { "icon": "fa-solid fa-microchip", "label": "AI" }
+  ],
+  "stores": {
+    "googlePlay": "com.axiom.taskmanager",
+    "appStore": ""
+  },
+  "features": [
+    { "icon": "fa-solid fa-wand-magic-sparkles", "title": "AI Input", "text": "Type or speak: the AI decides whether it is a task, an alarm or a quick note and fills in the date, time and subtasks." },
+    { "icon": "fa-solid fa-list-check", "title": "Kanban Boards", "text": "Move tasks through Backlog, To Do, In Progress and Completed at a glance." },
+    { "icon": "fa-solid fa-chart-gantt", "title": "Gantt Charts", "text": "See your plan on a visual timeline with progress bars." },
+    { "icon": "fa-solid fa-calendar-days", "title": "Calendar", "text": "See tasks by day and reschedule them with a long press." },
+    { "icon": "fa-solid fa-bell", "title": "Alarms & Reminders", "text": "Recurring tasks and exact alarms that ring at the time you set." },
+    { "icon": "fa-solid fa-chart-line", "title": "Progress Dashboard", "text": "Completion rate, weekly trend and streaks to keep your momentum." }
+  ],
+  "highlights": ["14 languages", "Export to CSV, Excel, PDF or JSON", "No account needed"],
+  "home": { "listed": true },
+  "legal": {
+    "services": ["admob", "firebase-analytics", "crashlytics", "revenuecat", "google-play", "ai", "cybrainx-kit"],
+    "ads": { "personalized": true },
+    "permissions": ["notifications", "exact-alarm", "microphone"],
+    "purpose": "organizing tasks, alarms and notes, and turning what you type or say into tasks",
+    "dataCards": [
+      {
+        "title": "Your tasks and projects",
+        "text": "The tasks, subtasks, alarms, notes and settings you create are stored on your device. We do not upload them to our servers, and local backups stay on your device."
+      },
+      {
+        "title": "Voice input",
+        "text": "When you dictate, your device's speech recognition service (for example, Google on Android) turns your voice into text. Axiom does not record or keep audio; the text is then handled like typed text."
+      }
+    ],
+    "minAge": 13
+  }
+}

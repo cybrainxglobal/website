@@ -71,11 +71,21 @@
                         class="req">*</span></label>
                 <select id="app" name="app" required>
                     <option value="">— Select / Selecione —</option>
-                    <option value="Inspire Me Now">Inspire Me Now</option>
-                    <option value="Axiom">Axiom</option>
-                    <option value="Smart Classic Sudoku">Smart Classic Sudoku</option>
-                    <option value="Einstein IQ Test">Einstein IQ Test</option>
-                    <option value="Wake360">Wake360</option>
+                    <!-- APP-OPTIONS:START — generated from _apps/*.json -->
+                    <option value="Axiom" data-slug="axiom">Axiom</option>
+                    <option value="BibleQuery AI" data-slug="biblequery-ai">BibleQuery AI</option>
+                    <option value="ClickFlow" data-slug="clickflow">ClickFlow</option>
+                    <option value="Cosmic 2048" data-slug="cosmic2048">Cosmic 2048</option>
+                    <option value="Einstein IQ Test" data-slug="einstein-iq-test">Einstein IQ Test</option>
+                    <option value="Inspire Me Now" data-slug="inspire-me-now">Inspire Me Now</option>
+                    <option value="Lux Biblica" data-slug="luxbiblica">Lux Biblica</option>
+                    <option value="Signum" data-slug="signum">Signum</option>
+                    <option value="Smart Classic Sudoku" data-slug="smart-classic-sudoku">Smart Classic Sudoku</option>
+                    <option value="SmartNoteAI" data-slug="smartnoteai">SmartNoteAI</option>
+                    <option value="Wake360" data-slug="wake360">Wake360</option>
+                    <option value="WordMatrix" data-slug="wordmatrix">WordMatrix</option>
+                    <option value="X Crosswords" data-slug="xcrosswords">X Crosswords</option>
+                    <!-- APP-OPTIONS:END -->
                     <option value="cybrainx.com (website)">cybrainx.com (website)</option>
                     <option value="__other__">Other / Outro</option>
                 </select>
@@ -192,6 +202,16 @@
             });
         })();
     </script>
+    <!-- APP-PRESELECT:START — generated -->
+    <script>
+        // ?app=<slug> (used by each app page) preselects the app in the form.
+        (function () {
+            var slug = (new URLSearchParams(window.location.search).get('app') || '').replace(/[^a-z0-9-]/g, '');
+            var option = slug && document.querySelector('#app option[data-slug="' + slug + '"]');
+            if (option) option.selected = true;
+        })();
+    </script>
+    <!-- APP-PRESELECT:END -->
 </body>
 
 </html>

@@ -1,0 +1,9 @@
+{
+  "name": "Orbit Mind",
+  "mode": "manual",
+  "home": { "listed": true },
+  "legal": {
+    "privacy": "privacy-policy.html",
+    "terms": "terms-of-use.html"
+  }
+}

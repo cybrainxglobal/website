@@ -35,7 +35,7 @@ const RESERVED = new Set(['assets', 'images', 'css', 'js', 'node_modules']);
 
 const KNOWN_KEYS = new Set([
   'name', 'mode', 'lang', 'headline', 'tagline', 'description', 'icon', 'image', 'colors', 'tags',
-  'category', 'stores', 'features', 'highlights', 'screenshots', 'plans', 'privacyBlurb', 'home', 'legal',
+  'category', 'stores', 'availabilityLabel', 'features', 'highlights', 'screenshots', 'plans', 'privacyBlurb', 'home', 'legal',
 ]);
 const KNOWN_LEGAL_KEYS = new Set([
   'updated', 'platforms', 'minAge', 'account', 'services', 'ads', 'permissions', 'purpose', 'onDevice', 'cloud',
@@ -134,6 +134,7 @@ function validate(app) {
   need(list(app.highlights) && (app.highlights || []).every(isText), '"highlights" must be a list of short texts');
   need(list(app.plans) && (app.plans || []).every((pl) => isText(pl.name) && list(pl.items)), '"plans" must be [{ "name", "price", "items": [] }]');
 
+  if (app.availabilityLabel !== undefined) need(isText(app.availabilityLabel), '"availabilityLabel" must be a status message');
   const stores = app.stores || {};
   if (stores.googlePlay !== undefined && stores.googlePlay !== '') need(PKG_RE.test(stores.googlePlay), '"stores.googlePlay" must be the Android package, e.g. "com.cybrainx.myapp"');
   if (stores.appStore) need(/^https:\/\/apps\.apple\.com\//.test(stores.appStore), '"stores.appStore" must be an https://apps.apple.com/... URL');

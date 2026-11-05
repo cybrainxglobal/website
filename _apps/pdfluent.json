@@ -1,0 +1,99 @@
+{
+  "name": "PDFluent",
+  "mode": "generated",
+  "lang": "pt",
+  "headline": "Aprenda inglês com os PDFs que você já lê",
+  "tagline": "Ouça a leitura em inglês, consulte a tradução no próprio parágrafo e reveja as palavras que você salvou.",
+  "description": "Abra um livro, artigo ou apostila em inglês no Android. Ouça a narração e acompanhe o texto na tela. Quando uma expressão chamar sua atenção, consulte o significado e guarde a frase em que ela apareceu.\n\nO PDFluent está em fase de testes para Android. A leitura e a voz leve funcionam no aparelho. A tradução para português requer o download inicial do modelo, e a criação de quizzes com IA usa internet.",
+  "icon": "fa-solid fa-book-open-reader",
+  "image": "icon.png",
+  "colors": [
+    "#B64A24",
+    "#29465E"
+  ],
+  "category": "EducationalApplication",
+  "tags": [
+    {
+      "icon": "fa-brands fa-android",
+      "label": "Android em teste"
+    },
+    {
+      "icon": "fa-solid fa-language",
+      "label": "Inglês"
+    }
+  ],
+  "stores": {},
+  "features": [
+    {
+      "icon": "fa-solid fa-headphones",
+      "title": "Ouça enquanto lê",
+      "text": "A voz neural leve vem incluída no app. O leitor prepara o trecho seguinte enquanto você ouve e permite pausar, retomar e ajustar a velocidade."
+    },
+    {
+      "icon": "fa-solid fa-language",
+      "title": "Escolha quando ver a tradução",
+      "text": "O botão Palavra liga a dica sobre o termo. A tradução da frase tem controle próprio e pode aparecer automaticamente ou só quando você tocar."
+    },
+    {
+      "icon": "fa-solid fa-bookmark",
+      "title": "Guarde a frase inteira",
+      "text": "Salve uma palavra ou expressão com o significado e o trecho do livro. Depois, complete a frase em um exercício ou volte ao parágrafo original."
+    },
+    {
+      "icon": "fa-solid fa-calendar-check",
+      "title": "Reveja no seu ritmo",
+      "text": "A revisão espaçada agenda o próximo encontro com cada palavra. Você também pode pedir um quiz de dez questões e repetir as questões salvas offline."
+    },
+    {
+      "icon": "fa-solid fa-file-lines",
+      "title": "Leia páginas escaneadas",
+      "text": "Use o reconhecimento de texto no aparelho para transformar uma página em leitura. Em livros compatíveis, continue o processamento das outras páginas em segundo plano."
+    },
+    {
+      "icon": "fa-solid fa-box-archive",
+      "title": "Leve o estudo para outro celular",
+      "text": "Exporte palavras, marcadores, revisões e quizzes. Restaure o arquivo no outro aparelho e reimporte seus PDFs para abrir os trechos novamente."
+    }
+  ],
+  "screenshots": [
+    "leitor.webp"
+  ],
+  "home": {
+    "listed": true,
+    "order": 25
+  },
+  "legal": {
+    "services": [
+      "admob",
+      "ai"
+    ],
+    "ads": {
+      "personalized": false
+    },
+    "permissions": [
+      "microphone",
+      "storage"
+    ],
+    "purpose": "estudar inglês a partir de PDFs escolhidos por você, com leitura, narração e revisão de vocabulário",
+    "onDevice": "Os PDFs importados, o texto reconhecido por OCR, as posições de leitura, o vocabulário e os quizzes salvos ficam no armazenamento privado do aplicativo.",
+    "dataCards": [
+      {
+        "title": "Palavra usada no quiz",
+        "text": "Quando você pede um novo quiz, o aplicativo envia a palavra selecionada e um identificador de pedido ao serviço da Cybrainx na Cloudflare. A palavra é processada via OpenRouter. O serviço usa um identificador temporário derivado da conexão para aplicar a cota diária. O conteúdo do PDF, o significado salvo e as notas ficam no aparelho."
+      },
+      {
+        "title": "Tradução, narração e microfone",
+        "text": "A voz leve e o OCR funcionam localmente. O modelo de tradução é baixado dos serviços do Google. A voz Kokoro opcional exige download de arquivos públicos. Se você escolher uma voz Android online, o fornecedor do motor poderá receber o texto lido. O treino de fala usa o microfone quando você o aciona. O áudio gravado para comparação é temporário, e o reconhecimento de palavras usa o serviço local do Android quando disponível."
+      },
+      {
+        "title": "Backup escolhido por você",
+        "text": "O arquivo exportado contém trechos e anotações em texto legível e fica no destino selecionado no Android. Os PDFs originais e as gravações ficam fora desse arquivo. O Android também pode incluir dados de estudo em seu próprio backup, conforme as configurações do aparelho."
+      },
+      {
+        "title": "Anúncios na versão de teste",
+        "text": "Durante a geração online de questões, o aplicativo pode solicitar um anúncio nativo de demonstração do Google AdMob. O aplicativo não fornece ao SDK o PDF nem a palavra escolhida."
+      }
+    ]
+  },
+  "availabilityLabel": "Versão de teste para Android"
+}

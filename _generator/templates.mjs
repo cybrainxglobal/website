@@ -116,7 +116,7 @@ export function appPage(app, site, year) {
       `<a class="cta-button secondary" href="${esc(app.stores.appStore)}" target="_blank" rel="noopener"><i class="fa-brands fa-apple"></i> ${u.appStore}</a>`,
     );
   }
-  if (!stores.length) stores.push(`<span class="coming-soon"><i class="fa-solid fa-hourglass-half"></i> ${u.comingSoon}</span>`);
+  if (!stores.length) stores.push(`<span class="coming-soon"><i class="fa-solid fa-hourglass-half"></i> ${esc(app.availabilityLabel || u.comingSoon)}</span>`);
 
   const badge = app.tags?.[0]
     ? `<div class="hero-badge reveal"><i class="${esc(app.tags[0].icon)}"></i> ${esc(app.tags[0].label)}</div>`

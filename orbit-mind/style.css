@@ -81,3 +81,15 @@ footer nav { gap: 18px; }
 @media (max-width: 920px) { .hero { gap: 24px; padding: 70px 0; } .features, .plans { grid-template-columns: repeat(2, 1fr); } .workflow { gap: 35px; } .legal-links { grid-template-columns: 1fr; } footer { flex-direction: column; } }
 @media (max-width: 680px) { .topbar { padding: 18px 20px; align-items: flex-start; flex-direction: column; gap: 14px; } nav { gap: 20px; } main { padding: 0 20px; } .hero { grid-template-columns: 1fr; padding: 54px 0; } .hero-copy { max-width: 540px; } .map-preview { margin-top: 10px; } .features, .plans, .workflow { grid-template-columns: 1fr; } .plans article { padding: 24px; } .section { padding: 48px 0; } .features article { padding: 24px; } .legal-page { padding-top: 40px; padding-bottom: 48px; } .legal-page section { padding: 22px; } footer { padding: 24px 20px 32px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Keep the launch action beside the brand on phones and let the section links wrap below. */
+.product-topbar { flex-wrap: wrap; }
+.product-topbar nav { margin-left: auto; }
+.header-launch { flex-shrink: 0; min-height: 44px; padding: 10px 16px; }
+@media (max-width: 680px) {
+  .product-topbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+  .product-topbar nav { grid-column: 1 / -1; grid-row: 2; margin: 0; gap: 6px 16px; }
+  .product-topbar nav a { display: inline-flex; align-items: center; min-height: 40px; }
+  .header-launch { grid-column: 2; grid-row: 1; }
+  .hero .actions .button { flex: 1 1 175px; justify-content: center; }
+}

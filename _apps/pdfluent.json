@@ -4,7 +4,7 @@
   "lang": "pt",
   "headline": "Aprenda inglês com os PDFs que você já lê",
   "tagline": "Ouça a leitura em inglês, consulte a tradução no próprio parágrafo e reveja as palavras que você salvou.",
-  "description": "Abra um livro, artigo ou apostila em inglês no Android. Ouça a narração e acompanhe o texto na tela. Quando uma expressão chamar sua atenção, consulte o significado e guarde a frase em que ela apareceu.\n\nO PDFluent está em fase de testes para Android. A leitura e a voz leve funcionam no aparelho. A tradução para português requer o download inicial do modelo, e a criação de quizzes com IA usa internet.",
+  "description": "Abra um livro, artigo ou apostila em inglês no Android. Ouça a narração e acompanhe o texto na tela. Quando uma expressão chamar sua atenção, consulte o significado e guarde a frase em que ela apareceu.\n\nO PDFluent está em fase de testes para Android. A leitura e a voz leve funcionam no aparelho. O modelo de tradução para português pode ser baixado por Wi-Fi ou dados móveis. Depois, a tradução funciona offline. A criação de novos quizzes com IA usa internet.",
   "icon": "fa-solid fa-book-open-reader",
   "image": "icon.png",
   "colors": [
@@ -32,7 +32,7 @@
     {
       "icon": "fa-solid fa-language",
       "title": "Escolha quando ver a tradução",
-      "text": "O botão Palavra liga a dica sobre o termo. A tradução da frase tem controle próprio e pode aparecer automaticamente ou só quando você tocar."
+      "text": "Ative Palavra para ver uma dica de tradução sobre o termo durante a leitura. Com voz neural, a posição da palavra é aproximada. Você escolhe separadamente quando ver a tradução da frase."
     },
     {
       "icon": "fa-solid fa-bookmark",
@@ -56,7 +56,8 @@
     }
   ],
   "screenshots": [
-    "leitor.webp"
+    "leitor.webp",
+    "traducao-da-palavra.webp"
   ],
   "home": {
     "listed": true,
@@ -95,5 +96,5 @@
       }
     ]
   },
-  "availabilityLabel": "Versão de teste para Android"
+  "availabilityLabel": "Android · versão de teste 0.10.1"
 }
